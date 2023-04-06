@@ -6,7 +6,7 @@
 Select 
     players.first_name
     ,players.last_name
-    ,count(stats.hits)
+    ,sum(stats.hits)
 
 from stats 
     
