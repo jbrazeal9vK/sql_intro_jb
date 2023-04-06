@@ -14,4 +14,14 @@
 -- | 2020 | 30       |
 -- +------+----------+
 
+Select 
+    year
+    ,count(name) 
+    -- ,park
 
+from teams
+
+where 1=1
+        
+group by year
+order by year asc

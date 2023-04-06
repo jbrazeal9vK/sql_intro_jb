@@ -25,3 +25,16 @@
 -- | Ian        | Happ      |
 
 
+Select 
+    players.first_name
+    ,players.last_name
+
+from stats 
+    
+    inner join players on players.id = stats.player_id
+    inner join teams on teams.id = stats.team_id
+
+where 1=1
+    and teams.year = 2020
+    and teams.name = 'Chicago Cubs'
+
